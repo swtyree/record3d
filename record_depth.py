@@ -252,7 +252,8 @@ if __name__ == "__main__":
     app.connect_to_device(dev_idx=args.device)
 
     # start processing the stream
-    print("Press `q` in OpenCV window (or Ctrl+C in terminal) to exit...")
+    print("Press `q` in OpenCV window (or Ctrl+C in terminal) to exit")
+    print("Press `s` in OpenCV window to toggle recording")
     try:
         app.process_stream()
     except KeyboardInterrupt:
